@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Crete Round', serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: black;
+
+    background-image: url(../Imagenes/inauguracion-museo-paleontologicojpg.webp) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu {
+    margin: o auto;
+    background: #304739;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+@media screen and(min-width:52em) { /*desktop*/
+    .menu{
+        max-width: 52em;  /*tablet*/
+    }   
+    h1 {
+        font-size: 40px;
+    }
+    .form{
+            width: 100%;
+        }
+
+}
+
+
+.menu-principal ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* background: #1a733d; */
+    display: flex; /*flex*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.menu-principal li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: .6em 1em;
+}
+.menu-principal li a:hover {
+    background:#1a733d;
+}
+.menu-principal li {
+    flex: 1 0 auto;
+    text-align: center;
+}
+h1 {
+    margin: 1em;
+    text-align: center;
+    color: black;
+}
+
+.pie {
+    background: #77b27f;
+    border-top: 2px solid #ddf5b5;
+    padding: 0;
+    margin: 0;
+}
+
+.derechos {
+    background: #208e4c;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.form{
+    max-width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+.form .form-fieldset{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;    
+    }
+
+
+.form .form-fieldset .form-input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+}
+
+.form .form-fieldset .form-input:focus{
+    background-color: rgb(222, 247, 193);
+}
+
+
+.form .form-fieldset .form-textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.form .form-fieldset .form-textarea:focus{
+    background-color: rgb(222, 247, 193);
+}
+
+
+.boton-submit{
+    background-color: #304739;
+    color: #fff;
+    padding: 7px;
+    margin: auto; 
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.boton-submit:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
