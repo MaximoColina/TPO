@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+
 body{
     font-family: 'Crete Round', serif;
     background-color: black;
@@ -11,12 +13,14 @@ body{
     padding: 0;
     color: black;
 
+    /* Estilos imagen de fondo */
     background-image: url(../Imagenes/inauguracion-museo-paleontologicojpg.webp) ;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
 }
+
 
 /* Estilos menu */
 .menu {
@@ -36,8 +40,8 @@ body{
     .form{
             width: 100%;
         }
-
 }
+
 
 .menu-principal ul{
     list-style-type: none;
@@ -56,18 +60,25 @@ body{
     color: #fff;
     padding: .6em 1em;
 }
+
+
 .menu-principal li a:hover {
     background:#1a733d;
 }
+
+
 .menu-principal li {
     flex: 1 0 auto;
     text-align: center;
 }
+
+
 h1 {
     margin: 1em;
     text-align: center;
     color: black;
 }
+
 
 /* Estilos pie */
 .pie {
@@ -77,18 +88,20 @@ h1 {
     margin: 0;
 }
 
+
 .derechos {
     background: #208e4c;
     padding: 0;
     margin: 0;
 }
 
+
 .logo {
 padding: 0;
 margin-top: 5px;
 margin-left: 5px;
-
 }
+
 
 /* Estilos formulario */
 .form{
@@ -102,6 +115,7 @@ margin-left: 5px;
     margin-bottom: 10px;
 }
 
+
 h2{
     color: #fff;
     margin: 0;
@@ -109,6 +123,7 @@ h2{
     font-size: 30px;
     margin: auto;
 }
+
 
 .form .form-fieldset{
     width: 100%;
@@ -129,6 +144,7 @@ h2{
     border: none;
 }
 
+
 .form .form-fieldset .form-input:focus{
     background-color: rgb(222, 247, 193);
 }
@@ -145,6 +161,7 @@ h2{
     max-height: 200px;
     max-width: 100%;
 }
+
 
 .form .form-fieldset .form-textarea:focus{
     background-color: rgb(222, 247, 193);

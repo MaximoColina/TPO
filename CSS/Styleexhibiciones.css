@@ -6,6 +6,7 @@ body{
     color: black;
 }
 
+
 .menu {
     margin: o auto;
     background: #304739;
@@ -40,18 +41,25 @@ body{
     color: #fff;
     padding: .6em 1em;
 }
+
+
 .menu-principal li a:hover {
     background:#1a733d;
 }
+
+
 .menu-principal li {
     flex: 1 0 auto;
     text-align: center;
 }
+
+
 h1 {
     margin: 1em;
     text-align: center;
     color: black;
 }
+
 
 .pie {
     background: #77b27f;
@@ -63,35 +71,45 @@ h1 {
 
 /*Galeria de exhibiciones*/
 
-
 .centrado {
     margin: 0 auto;
     padding: 0 .8em;
 }
 
+
 .card a {
     color: rgb(187, 202, 215);
     text-decoration: none;
 }
-.card a:hover {
-box-shadow: 3px 3px 8px #1b2ba8;
+
+
+.card:hover {
+box-shadow: 5px 5px 5px #0f1438;
 }
 
 
 .card-content {
     padding: 1.4em;
 }
+
+
 .card-content h2 {
     margin-top: 0;
     margin-bottom: .5em;
     font-size: 95%;
 }
+
+
 .card-content p {
     font-size: 90%;
 }
+
+
 figure {
     margin: 0;
 }
+
+
 img {
     display: block;
     border: 0;
@@ -99,13 +117,31 @@ img {
     height: auto;
 }
 
-.card {
-    background-color: #5a608b;
-    margin-bottom: 2em;
-    width: 40%;
-}
+
 .cards {
     display: flex; /**/
     flex-wrap: wrap;
     justify-content:space-evenly;
 }
+
+
+.card {
+    background-color: #5a608b;
+    margin-bottom: 2em;
+    width: 40%;
+
+/*Rotación cubos card*/
+
+    position: relative;
+    animation-name: cuboinclina;
+    animation-delay: 2s;
+    animation-duration: 8s;
+}
+
+
+@keyframes cuboinclina {
+    0%{rotate: 5deg;}
+    50%{rotate: -5deg;}
+    100%{rotate: 0deg;}
+}
+
