@@ -64,23 +64,11 @@ h1 {
 /*Galeria de exhibiciones*/
 
 
-/*body {
-    background-color: rgb(24, 139, 233);
-    margin: 0;
-}*/
-.cabecera {
-background-color: rgb(9, 75, 130);
-}
 .centrado {
     margin: 0 auto;
     padding: 0 .8em;
 }
-.titulo1 {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-weight: 300;
-    color: rgb(34, 192, 209);
-}
+
 .card a {
     color: rgb(187, 202, 215);
     text-decoration: none;
@@ -88,6 +76,8 @@ background-color: rgb(9, 75, 130);
 .card a:hover {
 box-shadow: 3px 3px 8px #1b2ba8;
 }
+
+
 .card-content {
     padding: 1.4em;
 }
@@ -108,7 +98,7 @@ img {
     width: 100%;
     height: auto;
 }
-/*empezamos a darle flex*/
+
 .card {
     background-color: #5a608b;
     margin-bottom: 2em;
