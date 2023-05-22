@@ -29,7 +29,7 @@ body{
     h1 {
         font-size: 40px;
     }
-}
+} /*fin media*/
 
 
 .menu-principal ul{
@@ -172,12 +172,13 @@ footer {
 /* Iframe video incrustado*/
 .video-container {
 position: relative;
-padding-bottom: 56.25% ;
-padding-top: 15px;
+padding-bottom: 145px;
+padding-top: 145px;
 height: 0;
 overflow: hidden;
 max-width: 1024px;
 margin: auto;
+/*border: chartreuse 10px solid;*/
 }
 
 

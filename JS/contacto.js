@@ -1,74 +1,72 @@
-// Obtenemos los elementos del formulario
+// Declaración variables
 const form = document.querySelector('#form');
-const apellidoInput = document.querySelector('#apellido');
-const nombreInput = document.querySelector('#nombre');
-const correoInput = document.querySelector('#correo');
-const comentariosInput = document.querySelector('#comentarios');
+const apellidoIn = document.querySelector('#apellido');
+const nombreIn = document.querySelector('#nombre');
+const correoIn = document.querySelector('#correo');
+const comentariosIn = document.querySelector('#comentarios');
 
 
 form.addEventListener('submit', (event) => {
 event.preventDefault();
 
 
-  // Validamos los campos del formulario
-if (!validarApellido()) {
+  // Funciones
+if (!validarApellidoFt()) {
     alert('Ingrese un apellido valido');
-    apellidoInput.focus();
+    apellidoIn.focus();
     return;
 }
 
 
-if (!validarNombre()) {
+if (!validarNombreFt()) {
     alert('Ingrese un nombre valido');
-    nombreInput.focus();
+    nombreIn.focus();
     return;
 }
 
 
-if (!validarCorreo()) {
+if (!validarCorreoFt()) {
     alert('Ingrese un correo electrónico valido');
-    correoInput.focus();
+    correoIn.focus();
     return;
 }
 
 
-if (!validarComentarios()) {
+if (!validarComentariosFt()) {
     alert('Ingrese un comentario valido');
-    comentariosInput.focus();
+    comentariosIn.focus();
     return;
 }
 
 
-// Si todo está validado, enviamos el formulario
 form.submit();
 });
 
 
-// Funciones de validación para cada campo del formulario
-function validarApellido() {
-const apellido = apellidoInput.value.trim();
+function validarApellidoFt() {
+const apellido = apellidoIn.value.trim();
 const regex = /^[a-zA-Z\s]+$/;
-return regex.test(apellido) && apellido.length > 0 && apellido.length <= 40;
+return regex.test(apellido) && apellido.length > 0 && apellido.length <= 50;
 }
 
 
-function validarNombre() {
-const nombre = nombreInput.value.trim();
+function validarNombreFt() {
+const nombre = nombreIn.value.trim();
 const regex = /^[a-zA-Z\s]+$/;
-return regex.test(nombre) && nombre.length > 0 && nombre.length <= 40;
+return regex.test(nombre) && nombre.length > 0 && nombre.length <= 50;
 }
 
 
-function validarCorreo() {
-const correo = correoInput.value.trim();
+function validarCorreoFt() {
+const correo = correoIn.value.trim();
 const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-return regex.test(correo) && correo.length > 0 && correo.length <= 40;
+return regex.test(correo) && correo.length > 0 && correo.length <= 50;
 }
 
 
-function validarComentarios() {
-const comentarios = comentariosInput.value.trim();
-return comentarios.length > 0 && comentarios.length <= 250;
+function validarComentariosFt() {
+const comentarios = comentariosIn.value.trim();
+return comentarios.length > 0 && comentarios.length <= 200;
 }
 
 
