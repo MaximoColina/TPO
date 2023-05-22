@@ -8,9 +8,10 @@ body{
 
 
 .menu {
-    margin: o auto;
+    margin: auto;
     background: #304739;
     border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
 }
 
 
