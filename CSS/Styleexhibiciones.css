@@ -29,7 +29,6 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    /* background: #1a733d; */
     display: flex; /*flex*/
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,7 +39,7 @@ body{
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: .6em 1em;
+    padding: .8em 1em;
 }
 
 
@@ -120,6 +119,7 @@ footer {
     margin: 10px;
     color: #595959;
     font-weight: 600;  
+    text-decoration: none;
 }
 
 
