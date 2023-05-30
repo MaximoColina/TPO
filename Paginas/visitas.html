@@ -9,15 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="96x96" href="../Imagenes/dino.jpg">
-    <script src="https://kit.fontawesome.com/99c9b22381.js" crossorigin="anonymous"></script>
     <title>Visitas</title>
-    
+   
     <!--Trabajo Practico Obligatorio Desarrollo Web - HTML CSS JS-->
 
 </head>
 <body>
     <header>
-        <div class="menu">      
+        <div class="menu">     
             <section class="menu-menu">
                 <nav class="menu-principal">
                     <ul>
@@ -27,12 +26,46 @@
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-            </section>    
+            </section>   
             </div>
     </header>
     <main>
-        <h1>Museo Paleontológico</h1>
+        <!--INICIO-->
+        <!--Portada de inicio-->
+        <div class="contenedor__cover">
+            <div class="cover">
+                <div class="text__cover">
+                     <h1>Vive la experiencia de visitar nuestro Museo</h1>
+                     <p>Conocé las diferentes maneras de ingresar en este portal del tiempo y conocer las distintas especies que habitaron el Planeta tierra antes de nuestra llegada.</p>  
+               <a href="../Paginas/exhibiciones.html" class="btn__text-cover">Visitar</a>
+                </div>
+                <div class="image__cover">
+                    <img src="../Imagenes/museo_paleontologico_2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor__visita">
+            <div class="horario">
+                <h2>Horarios</h2>
+                <h3>Lunes a Viernes de 09:00 a 17:00 hs. </h3>
+            </div>
+            <div class="tarifas">
+                <h2>Tarifas</h2>
+                <h3>Entrada General:  $1800</h3>
+                <h3>Jubilados Nacionales:  $1200</h3>
+                <h3>Menores de 0 a 6 años:  Sin costo</h3>
+                <h3>Menores de 6 a 12 años:  $1000</h3>
+                <h3>Visitas grupales</h3>
+                <a href="../Paginas/contacto.html" class="btn__text-cover">Cotizar</a>
+            </div>
+        </div>
+        
     </main>
+        <div id="map"></div>
+    <script src="../JS/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+   
     <footer>
         <div class="pie">
             <div class="box-pie">

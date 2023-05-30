@@ -8,17 +8,16 @@ body{
 
 
 .menu {
-    margin: auto;
+    margin: o auto;
     background: #304739;
     border-bottom: 2px solid #ffffff;
-    border-top: 2px solid #ffffff;
 }
 
 
 @media screen and(min-width:52em) { /*desktop*/
     .menu{
         max-width: 52em;  /*tablet*/
-    }   
+    }  
     h1 {
         font-size: 40px;
     }
@@ -29,6 +28,7 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    /* background: #1a733d; */
     display: flex; /*flex*/
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,8 +38,8 @@ body{
 .menu-principal li a {
     display: block;
     text-decoration: none;
-    color: #fff;
-    padding: .8em 1em;
+    color: #ffffffdc;
+    padding: .6em 1em;
 }
 
 
@@ -60,7 +60,137 @@ h1 {
     color: black;
 }
 
+/*Estilos Main */
+:root{
+    --color_text-primary: #1a733d;
+    --color_text-secundary: #3b3a3a;
+    --color_text-tertiary: #ffffffdc;
+    --main_color-primary: #06082c;
+    --main_color-tertiary: #5a608b;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
 
+}
+/*Portada inicio*/
+.contenedor__cover{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--main_color-primary);
+}
+
+.cover{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+
+}
+.text__cover{
+    width: 100%;
+    padding-right: 50px;
+}
+
+.text__cover h1{
+    font-size: 45px;
+    color: var(--color_text-tertiary);
+}
+
+.text__cover p{
+    color: #b5b3b3dc;
+    margin-top: 40px;
+    font-size: 90%;
+    align-items: center;
+}
+
+.btn__text-cover{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    background: var(--color_text-primary);
+    margin-top: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+   
+}
+
+.btn__text-cover:hover{
+    background: transparent;
+    border: 2px solid var(--color_text-primary);
+    box-shadow: 5px 5px 5px #0f1438;
+    transition: all 300ms;
+}
+
+
+.image__cover{
+    padding: 0;
+    margin: 0;
+   ;
+}
+
+.image__cover img{
+    width:  100%;
+    Height: 100%;
+}
+
+.contenedor__visita{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--color_text-tertiary);
+    display: flex;
+    align-items: center;
+  
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.informacion__visita{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+ 
+    padding: 0px 20px;
+    justify-content: space-evenly;
+}
+.horario{
+  
+    padding: 20px 100px;
+    margin: 1%;
+    width: 50%;
+
+}
+.tarifas{
+    background-color: #5a608b;
+    padding: 20px 50px;
+    margin: 0px 20px 0px 0px;
+    width: 50%;
+    opacity: 80%;
+    border-radius: 2%;
+}
+
+.tarifas h3{
+    text-justify: auto;
+    color: #ffffffdc;
+}
+
+.horario h3{
+    color: #595959;
+
+}
+
+.tarifas:hover{
+    box-shadow: 5px 5px 5px #0f1438;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
 /* Estilos pie */
 footer {
     width: 100%;
@@ -118,7 +248,7 @@ footer {
 .box-pie a{
     margin: 10px;
     color: #595959;
-    font-weight: 600;  
+    font-weight: 600; 
     text-decoration: none;
 }
 
@@ -152,5 +282,4 @@ footer {
     border: none;
     height: 1px;
     background-color: #3b3a3a;
-}
-	
+} 
