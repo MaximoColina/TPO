@@ -92,7 +92,7 @@ h1 {
 }
 
 .text__cover h1{
-    font-size: 45px;
+    font-size: 40px;
     color: var(--color_text-tertiary);
 }
 
@@ -143,6 +143,7 @@ h1 {
     padding-bottom: 50px;
     background: var(--color_text-tertiary);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   
     margin: auto;
@@ -161,14 +162,14 @@ h1 {
   
     padding: 20px 100px;
     margin: 1%;
-    width: 50%;
+/*    width: 50%; */
 
 }
 .tarifas{
     background-color: #5a608b;
     padding: 20px 50px;
     margin: 0px 20px 0px 0px;
-    width: 50%;
+/*    width: 50%; */
     opacity: 80%;
     border-radius: 2%;
 }
